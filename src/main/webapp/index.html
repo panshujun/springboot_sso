@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+
+<div id="app-1">
+    <p>{{ message }}</p>
+</div>
+
+
+<div id="app-2">
+  <span v-bind:title="message">
+    鼠标悬停此处几秒，
+    可以看到此处动态绑定的 title！
+  </span>
+</div>
+
+<!-- if 判断 -->
+<div id="app-3">
+    <p v-if="seen">现在你可以看到我</p>
+</div>
+
+<!-- for 循环 -->
+<div id="app-4">
+    <ol>
+        <li v-for="todo in todos">
+            {{ todo.text }}
+        </li>
+    </ol>
+</div>
+
+<!-- 点击事件 -->
+<div id="app-5">
+    <p>{{message}}</p>
+    <button v-on:click="reverseMessage">翻转 message</button>
+</div>
+
+<!-- 输入框 -->
+<div id="app-6">
+    <p>{{ message }}</p>
+    <input v-model="message">
+</div>
+
+<script>
+    new Vue({
+        el: '#app-1',
+        data: {
+            message: 'Hello Vue,test use it!'
+        }
+    });
+
+    var app2 = new Vue({
+        el: '#app-2',
+        data: {
+            message: '页面加载于 ' + new Date().toLocaleString()
+        }
+    });
+
+    var app3 = new Vue({
+        el: '#app-3',
+        data: {
+            seen: true
+        }
+    });
+
+    var app4 = new Vue({
+        el: '#app-4',
+        data: {
+            todos: [
+                { text: '学习 JavaScript' },
+                { text: '学习 Vue' },
+                { text: '创建激动人心的代码' }
+            ]
+        }
+    });
+    app4.todos.push({ text: '新的 item' });
+
+    <!-- 点击事件 -->
+    var app5 = new Vue({
+        el: '#app-5',
+        data: {
+            message: 'Hello Vue.js!'
+        },
+        methods: {
+            reverseMessage: function () {
+                this.message = this.message.split('').reverse().join('')
+            }
+        }
+    });
+
+    <!-- 输入框 -->
+    var app6 = new Vue({
+        el: '#app-6',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
+</script>
+</body>
+</html>

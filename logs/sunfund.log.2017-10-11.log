@@ -1,0 +1,88 @@
+2017-10-11 11:25:40.424 [main] INFO  com.sunfund.Application - Starting Application on JDYs-MBP with PID 6769 (/Users/jdy/Documents/github/biBabel/target/classes started by jdy in /Users/jdy/Documents/github/biBabel)
+2017-10-11 11:25:40.433 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-11 11:25:40.433 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-11 11:25:40.764 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 11:25:42.171 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-11 11:25:42.172 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-11 11:25:42.281 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-11 11:25:42.685 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-11 11:25:43.362 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-11 11:25:43.448 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-11 11:25:43.450 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-11 11:25:43.451 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-11 11:25:43.495 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-11 11:25:43.641 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 11:25:45.212 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-11 11:25:45.224 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-11 11:25:45.245 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-11 11:25:45.269 [main] INFO  com.sunfund.Application - Started Application in 5.365 seconds (JVM running for 5.997)
+2017-10-11 11:26:06.787 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-11 11:26:06.941 [http-nio-8181-exec-1] INFO  com.sunfund.core.common.BaseController - sssss=admin
+2017-10-11 11:28:10.570 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-11 12:51:05.216 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 13935 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-11 12:51:05.221 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-11 12:51:05.221 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-11 12:51:06.796 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 12:51:09.898 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-11 12:51:09.904 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-11 12:51:10.117 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-11 12:51:10.832 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-11 12:51:11.861 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-11 12:51:12.213 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-11 12:51:12.216 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-11 12:51:12.220 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:51:12.430 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-11 12:51:12.884 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:51:16.980 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-11 12:51:16.996 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-11 12:51:17.029 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-11 12:51:17.074 [main] INFO  com.sunfund.Application - Started Application in 12.817 seconds (JVM running for 14.843)
+2017-10-11 13:27:02.075 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-11 16:44:49.306 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 15516 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-11 16:44:49.312 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-11 16:44:49.313 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-11 16:44:50.192 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 16:44:53.137 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-11 16:44:53.145 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-11 16:44:53.372 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-11 16:44:54.107 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-11 16:44:55.120 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-11 16:44:55.466 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-11 16:44:55.474 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-11 16:44:55.478 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-11 16:44:55.668 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-11 16:44:56.121 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 16:44:59.594 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-11 16:44:59.608 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-11 16:44:59.637 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-11 16:44:59.686 [main] INFO  com.sunfund.Application - Started Application in 11.211 seconds (JVM running for 12.797)
+2017-10-11 16:45:34.472 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-11 16:58:37.738 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-11 18:46:43.650 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 16702 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-11 18:46:43.655 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-11 18:46:43.655 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-11 18:46:44.347 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-11 18:46:46.618 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-11 18:46:46.620 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-11 18:46:46.771 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-11 18:46:47.242 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-11 18:46:48.106 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-11 18:46:48.209 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-11 18:46:48.211 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-11 18:46:48.213 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-11 18:46:48.281 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-11 18:46:48.477 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 18:46:50.907 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-11 18:46:50.922 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-11 18:46:50.953 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-11 18:46:50.982 [main] INFO  com.sunfund.Application - Started Application in 8.875 seconds (JVM running for 10.021)
+2017-10-11 18:47:14.946 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-11 21:33:40.236 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

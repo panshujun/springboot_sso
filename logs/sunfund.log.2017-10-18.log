@@ -1,0 +1,711 @@
+2017-10-18 16:45:55.510 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 25667 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 16:45:55.521 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 16:45:55.522 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 16:45:56.193 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 16:45:57.232 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 16:45:57.232 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 16:46:00.106 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 16:46:00.112 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 16:46:00.385 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 16:46:01.249 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 16:46:02.288 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 16:46:02.719 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 16:46:02.728 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 16:46:02.732 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 16:46:02.940 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 16:46:03.515 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 16:46:05.401 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'verCodeService' defined in file [/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes/com/sunfund/core/common/utils/Test/smsTest.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+2017-10-18 16:46:05.413 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 16:46:05.417 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2017-10-18 16:46:05.458 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'verCodeService' defined in file [/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes/com/sunfund/core/common/utils/Test/smsTest.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sunfund.Application.main(Application.java:21)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147)
+	... 17 common frames omitted
+Caused by: java.lang.ClassCastException: org.apache.log4j.Logger cannot be cast to org.slf4j.Logger
+	at com.sunfund.core.common.utils.Test.smsTest.<clinit>(smsTest.java:23)
+	... 24 common frames omitted
+2017-10-18 18:00:14.595 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 26593 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 18:00:14.606 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 18:00:14.606 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 18:00:15.223 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 18:00:16.187 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 18:00:16.187 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 18:00:18.582 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 18:00:18.588 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 18:00:18.826 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 18:00:19.576 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 18:00:20.541 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 18:00:20.968 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 18:00:20.977 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 18:00:20.981 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 18:00:21.185 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 18:00:21.737 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 18:00:26.070 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:00:26.092 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:00:26.121 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-18 18:00:26.173 [main] INFO  com.sunfund.Application - Started Application in 12.489 seconds (JVM running for 15.279)
+2017-10-18 18:02:21.896 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 18:02:31.953 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 26623 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 18:02:31.961 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 18:02:31.961 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 18:02:32.865 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 18:02:33.649 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 18:02:33.649 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 18:02:35.127 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 18:02:35.128 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 18:02:35.321 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 18:02:35.844 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 18:02:36.609 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 18:02:36.735 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 18:02:36.742 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 18:02:36.743 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 18:02:36.817 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 18:02:36.985 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 18:02:41.411 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:02:41.431 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:02:41.464 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-18 18:02:41.506 [main] INFO  com.sunfund.Application - Started Application in 10.565 seconds (JVM running for 12.995)
+2017-10-18 18:03:40.448 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-18 18:04:52.926 [http-nio-8181-exec-1] ERROR com.sunfund.core.common.utils.Test.smsTest - success to send sms to 12345:{sig=0a5910515b5dea63e37710f4729bb2de, param="hello", respDataType=json, to=12345, accountSid=123, timestamp=20171018180405}:{"respCode":"00006","respDesc":"signéè¯¯ "}
+2017-10-18 18:05:16.471 [http-nio-8181-exec-3] ERROR com.sunfund.core.common.utils.Test.smsTest - success to send sms to 15210495787:{sig=eba1a28c7390ebe7de5459f1ed9e326c, param="hello", respDataType=json, to=15210495787, accountSid=123, timestamp=20171018180512}:{"respCode":"00006","respDesc":"signéè¯¯ "}
+2017-10-18 18:07:46.084 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 18:07:50.136 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 26688 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 18:07:50.141 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 18:07:50.142 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 18:07:50.842 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 18:07:51.743 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 18:07:51.743 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 18:07:53.391 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 18:07:53.392 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 18:07:53.574 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 18:07:54.042 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 18:07:54.847 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 18:07:55.029 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 18:07:55.037 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 18:07:55.039 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 18:07:55.161 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 18:07:55.328 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 18:07:59.215 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:07:59.235 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:07:59.270 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-18 18:07:59.314 [main] INFO  com.sunfund.Application - Started Application in 9.74 seconds (JVM running for 11.299)
+2017-10-18 18:10:25.049 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-18 18:10:48.914 [http-nio-8181-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Query was empty
+### The error may exist in file [/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes/mapper/userSys/master/SfUserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: 
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Query was empty
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Query was empty] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Query was empty
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy73.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:82)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy74.selectByPhone(Unknown Source)
+	at com.sunfund.userSys.service.impl.UserServiceImpl.SmsSender(UserServiceImpl.java:293)
+	at com.sunfund.userSys.controller.UserRestController.SmsSender(UserRestController.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-18 18:20:45.795 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 18:20:52.416 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 26843 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 18:20:52.422 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 18:20:52.422 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 18:20:53.229 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 18:20:54.341 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 18:20:54.341 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 18:20:56.197 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 18:20:56.198 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 18:20:56.518 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 18:20:57.106 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 18:20:58.110 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 18:20:58.295 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 18:20:58.299 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 18:20:58.301 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 18:20:58.413 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 18:20:58.601 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 18:21:02.790 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:21:02.813 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:21:02.852 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-18 18:21:02.903 [main] INFO  com.sunfund.Application - Started Application in 11.052 seconds (JVM running for 12.957)
+2017-10-18 18:21:25.828 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-18 18:21:54.942 [http-nio-8181-exec-1] INFO  com.sunfund.core.common.BaseController - ssssssss
+2017-10-18 18:23:54.475 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 18:23:59.193 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 26890 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 18:23:59.198 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 18:23:59.199 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 18:23:59.853 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 18:24:01.016 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 18:24:01.016 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 18:24:02.538 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 18:24:02.540 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 18:24:02.686 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 18:24:03.263 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 18:24:04.062 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 18:24:04.185 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 18:24:04.188 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 18:24:04.190 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 18:24:04.327 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 18:24:04.512 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 18:24:08.423 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:24:08.445 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:24:08.481 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-18 18:24:08.526 [main] INFO  com.sunfund.Application - Started Application in 9.891 seconds (JVM running for 11.162)
+2017-10-18 18:24:45.414 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-18 18:25:16.511 [http-nio-8181-exec-1] INFO  com.sunfund.core.common.BaseController - ssssssss
+2017-10-18 18:27:04.359 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 18:27:39.368 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 26937 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 18:27:39.380 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 18:27:39.381 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 18:27:40.054 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 18:27:41.086 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 18:27:41.087 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 18:27:42.778 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 18:27:42.779 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 18:27:42.928 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 18:27:43.400 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 18:27:44.261 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 18:27:44.411 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 18:27:44.415 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 18:27:44.417 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 18:27:44.504 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 18:27:44.675 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 18:27:48.531 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:27:48.549 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 18:27:48.582 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-18 18:27:48.622 [main] INFO  com.sunfund.Application - Started Application in 9.88 seconds (JVM running for 11.227)
+2017-10-18 20:19:28.294 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 20:19:34.301 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 27538 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 20:19:34.362 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 20:19:34.362 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 20:19:35.005 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 20:19:35.760 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 20:19:35.760 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 20:19:37.277 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 20:19:37.278 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 20:19:37.454 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 20:19:37.917 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 20:19:38.670 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 20:19:38.798 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 20:19:38.800 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 20:19:38.802 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 20:19:38.873 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 20:19:39.049 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 20:19:41.867 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:19:41.882 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:19:41.905 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-18 20:19:41.936 [main] INFO  com.sunfund.Application - Started Application in 8.239 seconds (JVM running for 9.401)
+2017-10-18 20:19:58.333 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-18 20:21:06.591 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 20:21:15.603 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 27580 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 20:21:15.611 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 20:21:15.615 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 20:21:16.158 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 20:21:16.774 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 20:21:16.774 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 20:21:18.148 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 20:21:18.150 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 20:21:18.291 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 20:21:18.773 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 20:21:19.606 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 20:21:19.735 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 20:21:19.737 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 20:21:19.739 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 20:21:19.798 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 20:21:19.969 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 20:21:22.708 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:21:22.726 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:21:22.749 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-18 20:21:22.790 [main] INFO  com.sunfund.Application - Started Application in 7.712 seconds (JVM running for 9.222)
+2017-10-18 20:21:33.882 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-18 20:25:19.848 [http-nio-8181-exec-3] INFO  com.sunfund.core.common.BaseController - ssssssss
+2017-10-18 20:25:43.744 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 20:25:48.618 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 27651 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 20:25:48.624 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 20:25:48.624 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 20:25:49.183 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 20:25:50.145 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 20:25:50.146 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 20:25:51.725 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 20:25:51.727 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 20:25:51.867 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 20:25:52.355 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 20:25:53.141 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 20:25:53.255 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 20:25:53.258 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 20:25:53.260 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 20:25:53.331 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 20:25:53.506 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 20:25:56.128 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:25:56.141 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:25:56.162 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-18 20:25:56.193 [main] INFO  com.sunfund.Application - Started Application in 8.081 seconds (JVM running for 9.468)
+2017-10-18 20:26:04.729 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-18 20:26:08.162 [http-nio-8181-exec-1] INFO  com.sunfund.core.common.BaseController - ssssssss
+2017-10-18 20:27:07.574 [http-nio-8181-exec-2] INFO  com.sunfund.core.common.BaseController - ssssssss
+2017-10-18 20:33:38.301 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 27796 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 20:33:38.305 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 20:33:38.306 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 20:33:38.902 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 20:33:39.512 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 20:33:39.513 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 20:33:41.330 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 20:33:41.331 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 20:33:41.517 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 20:33:42.087 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 20:33:43.001 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 20:33:43.368 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 20:33:43.373 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 20:33:43.377 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 20:33:43.454 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 20:33:43.701 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 20:33:46.495 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:33:46.508 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:33:46.525 [main] ERROR org.apache.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler ["http-nio-8181"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sunfund.Application.main(Application.java:21)
+2017-10-18 20:33:46.526 [main] ERROR org.apache.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8181]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8181]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sunfund.Application.main(Application.java:21)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	... 14 common frames omitted
+2017-10-18 20:33:46.536 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:33:46.536 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2017-10-18 20:33:46.546 [main] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2017-10-18 20:33:46.547 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:33:46.547 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:33:46.559 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8181 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8181, or configure this application to listen on another port.
+
+2017-10-18 20:33:46.572 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 20:34:08.593 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 27803 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 20:34:08.596 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 20:34:08.597 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 20:34:09.121 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 20:34:09.844 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 20:34:09.844 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 20:34:11.029 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 20:34:11.030 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 20:34:11.149 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 20:34:11.528 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 20:34:12.196 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 20:34:12.280 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 20:34:12.282 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 20:34:12.283 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 20:34:12.319 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 20:34:12.450 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 20:34:14.371 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:34:14.381 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:34:14.400 [main] ERROR org.apache.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler ["http-nio-8181"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sunfund.Application.main(Application.java:21)
+2017-10-18 20:34:14.401 [main] ERROR org.apache.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8181]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8181]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sunfund.Application.main(Application.java:21)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	... 14 common frames omitted
+2017-10-18 20:34:14.411 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:34:14.411 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2017-10-18 20:34:14.419 [main] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2017-10-18 20:34:14.420 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:34:14.420 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:34:14.426 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8181 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8181, or configure this application to listen on another port.
+
+2017-10-18 20:34:14.436 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 20:35:15.069 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 27821 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 20:35:15.074 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 20:35:15.074 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 20:35:15.660 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 20:35:16.311 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 20:35:16.312 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 20:35:17.518 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 20:35:17.520 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 20:35:17.657 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 20:35:18.048 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 20:35:18.697 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 20:35:18.782 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 20:35:18.784 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 20:35:18.785 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 20:35:18.825 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 20:35:18.938 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 20:35:20.779 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:35:20.789 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:35:20.807 [main] ERROR org.apache.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler ["http-nio-8181"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sunfund.Application.main(Application.java:21)
+2017-10-18 20:35:20.807 [main] ERROR org.apache.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8181]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8181]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.sunfund.Application.main(Application.java:21)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	... 14 common frames omitted
+2017-10-18 20:35:20.818 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:35:20.818 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2017-10-18 20:35:20.828 [main] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2017-10-18 20:35:20.828 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:35:20.829 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:35:20.836 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8181 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8181, or configure this application to listen on another port.
+
+2017-10-18 20:35:20.846 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 20:40:01.205 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 700 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 20:40:01.214 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 20:40:01.215 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 20:40:02.407 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 20:40:03.215 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 20:40:03.215 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 20:40:05.911 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 20:40:05.918 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 20:40:06.167 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 20:40:07.112 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 20:40:08.788 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 20:40:09.193 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 20:40:09.199 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 20:40:09.204 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 20:40:09.447 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 20:40:10.039 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 20:40:15.103 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:40:15.127 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:40:15.164 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-18 20:40:15.217 [main] INFO  com.sunfund.Application - Started Application in 14.979 seconds (JVM running for 18.675)
+2017-10-18 20:40:20.044 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-18 20:41:26.989 [http-nio-8181-exec-1] INFO  com.sunfund.core.common.BaseController - ssssssss
+2017-10-18 20:42:28.502 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-10-18 20:42:34.318 [main] INFO  com.sunfund.Application - Starting Application on 9douyudeAir with PID 752 (/Users/9douyu/Desktop/IdeaWorkSpace/biBabel/target/classes started by 9douyu in /Users/9douyu/Desktop/IdeaWorkSpace/biBabel)
+2017-10-18 20:42:34.325 [main] DEBUG com.sunfund.Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-10-18 20:42:34.326 [main] INFO  com.sunfund.Application - The following profiles are active: dev
+2017-10-18 20:42:34.944 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-18 20:42:35.758 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'sfUserMapper' and 'com.sunfund.userSys.dao.master.SfUserMapper' mapperInterface. Bean already defined with the same name!
+2017-10-18 20:42:35.758 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sunfund.userSys.dao.master]' package. Please check your configuration.
+2017-10-18 20:42:37.136 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-18 20:42:37.137 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-18 20:42:37.277 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-18 20:42:37.770 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-18 20:42:38.445 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-18 20:42:38.548 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-18 20:42:38.550 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-10-18 20:42:38.551 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-10-18 20:42:38.601 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-18 20:42:38.776 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-18 20:42:41.076 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:42:41.088 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8181"]
+2017-10-18 20:42:41.107 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-18 20:42:41.135 [main] INFO  com.sunfund.Application - Started Application in 7.284 seconds (JVM running for 8.508)
+2017-10-18 20:43:47.851 [http-nio-8181-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-18 20:44:08.852 [http-nio-8181-exec-1] INFO  com.sunfund.core.common.BaseController - ssssssss
+2017-10-18 21:22:53.285 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

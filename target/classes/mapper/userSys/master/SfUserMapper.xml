@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sunfund.userSys.dao.master.SfUserMapper" >
+  <resultMap id="BaseResultMap" type="com.sunfund.userSys.entity.SfUser" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="userName" property="username" jdbcType="VARCHAR" />
+    <result column="accountName" property="accountname" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="credentialsSalt" property="credentialssalt" jdbcType="VARCHAR" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+    <result column="locked" property="locked" jdbcType="VARCHAR" />
+    <result column="createTime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="deletestatus" property="deletestatus" jdbcType="INTEGER" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, userName, accountName, password, credentialsSalt, description, locked, createTime,
+    deletestatus, email, phone
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.sunfund.userSys.entity.SfUserExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from sf_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from sf_user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.sunfund.userSys.entity.SfUserExample" >
+    delete from sf_user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.sunfund.userSys.entity.SfUserExample" >
+    delete from sf_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.sunfund.userSys.entity.SfUser" >
+    insert into sf_user (id, userName, accountName,
+    password, credentialsSalt, description,
+    locked, createTime, deletestatus,
+    email, phone)
+    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{accountname,jdbcType=VARCHAR},
+    #{password,jdbcType=VARCHAR}, #{credentialssalt,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR},
+    #{locked,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{deletestatus,jdbcType=INTEGER},
+    #{email,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.sunfund.userSys.entity.SfUser" >
+    insert into sf_user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="username != null" >
+        userName,
+      </if>
+      <if test="accountname != null" >
+        accountName,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="credentialssalt != null" >
+        credentialsSalt,
+      </if>
+      <if test="description != null" >
+        description,
+      </if>
+      <if test="locked != null" >
+        locked,
+      </if>
+      <if test="createtime != null" >
+        createTime,
+      </if>
+      <if test="deletestatus != null" >
+        deletestatus,
+      </if>
+      <if test="email != null" >
+        email,
+      </if>
+      <if test="phone != null" >
+        phone,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="accountname != null" >
+        #{accountname,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="credentialssalt != null" >
+        #{credentialssalt,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null" >
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="locked != null" >
+        #{locked,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deletestatus != null" >
+        #{deletestatus,jdbcType=INTEGER},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        #{phone,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.sunfund.userSys.entity.SfUserExample" resultType="java.lang.Integer" >
+    select count(*) from sf_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <select id="selectByPhone" resultType="com.sunfund.userSys.entity.SfUser"></select>
+  <select id="findByName" resultType="com.sunfund.userSys.entity.SfUser"></select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update sf_user
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.username != null" >
+        userName = #{record.username,jdbcType=VARCHAR},
+      </if>
+      <if test="record.accountname != null" >
+        accountName = #{record.accountname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.password != null" >
+        password = #{record.password,jdbcType=VARCHAR},
+      </if>
+      <if test="record.credentialssalt != null" >
+        credentialsSalt = #{record.credentialssalt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.description != null" >
+        description = #{record.description,jdbcType=VARCHAR},
+      </if>
+      <if test="record.locked != null" >
+        locked = #{record.locked,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createtime != null" >
+        createTime = #{record.createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.deletestatus != null" >
+        deletestatus = #{record.deletestatus,jdbcType=INTEGER},
+      </if>
+      <if test="record.email != null" >
+        email = #{record.email,jdbcType=VARCHAR},
+      </if>
+      <if test="record.phone != null" >
+        phone = #{record.phone,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update sf_user
+    set id = #{record.id,jdbcType=INTEGER},
+    userName = #{record.username,jdbcType=VARCHAR},
+    accountName = #{record.accountname,jdbcType=VARCHAR},
+    password = #{record.password,jdbcType=VARCHAR},
+    credentialsSalt = #{record.credentialssalt,jdbcType=VARCHAR},
+    description = #{record.description,jdbcType=VARCHAR},
+    locked = #{record.locked,jdbcType=VARCHAR},
+    createTime = #{record.createtime,jdbcType=TIMESTAMP},
+    deletestatus = #{record.deletestatus,jdbcType=INTEGER},
+    email = #{record.email,jdbcType=VARCHAR},
+    phone = #{record.phone,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.sunfund.userSys.entity.SfUser" >
+    update sf_user
+    <set >
+      <if test="username != null" >
+        userName = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="accountname != null" >
+        accountName = #{accountname,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="credentialssalt != null" >
+        credentialsSalt = #{credentialssalt,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null" >
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="locked != null" >
+        locked = #{locked,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        createTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deletestatus != null" >
+        deletestatus = #{deletestatus,jdbcType=INTEGER},
+      </if>
+      <if test="email != null" >
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sunfund.userSys.entity.SfUser" >
+    update sf_user
+    set userName = #{username,jdbcType=VARCHAR},
+    accountName = #{accountname,jdbcType=VARCHAR},
+    password = #{password,jdbcType=VARCHAR},
+    credentialsSalt = #{credentialssalt,jdbcType=VARCHAR},
+    description = #{description,jdbcType=VARCHAR},
+    locked = #{locked,jdbcType=VARCHAR},
+    createTime = #{createtime,jdbcType=TIMESTAMP},
+    deletestatus = #{deletestatus,jdbcType=INTEGER},
+    email = #{email,jdbcType=VARCHAR},
+    phone = #{phone,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
